@@ -1,4 +1,4 @@
 ng-video-preview
 ================
 
-angular directive to get iframe preview of videos
+Angular.js directive to get iframe-preview of video hosted on youtube, vimeo, filmannex ecc.
