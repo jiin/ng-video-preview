@@ -1,0 +1,23 @@
+{
+  "name": "ng-video-preview",
+  "version": "0.0.2",
+  "description": "angular directive to get video previews",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "video",
+    "youtube",
+    "vimeo",
+    "vine",
+    "preview"
+  ],
+  "main": "video-preview",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiin/ng-video-preview"
+  },
+  "dependencies": {
+    "angular": "~1.3.0"
+  }
+}

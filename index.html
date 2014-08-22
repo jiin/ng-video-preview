@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="videoPreviewDemo">
+  <head>
+    <meta charset="utf-8">
+    <title>ngVideoPreview Demo</title>
+    
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- style -->
+    <link rel="stylesheet" href="//necolas.github.io/normalize.css/2.1.1/normalize.css">
+    <style>
+      html, body {
+        color: #5aadbb;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      h1 {
+        font-size: 60px;
+        text-align: center;
+      }
+
+      div#container {
+        width: 570px;
+        margin: 0 auto; 
+      }
+
+      div#previews {
+        margin-top: 80px;
+      }
+
+      hr {
+        padding: 0;
+        border: none;
+        border-top: medium double #5aadbb;
+        color: #333;
+        text-align: center;
+      }
+
+      footer {
+
+      }
+    </style>
+  </head>
+  <body ng-controller="videoPreviewDemoController">
+    <div id="container">
+      <h1>ngVideoPreview</h1>
+      <p><strong>ngVideoPreview</strong> is an angular directive that generate the emdeddable iframe of a video url.</p>
+      <p>Actually are supported:</p>
+      <ul>
+        <li>Youtube</li>  
+        <li>Vimeo</li>  
+        <li>Vine</li>  
+        <li>Bitlanders</li>
+      </ul>
+      <div id="previews">
+        <ng-video-preview source="youtube" url="http://youtu.be/VEUfscdqpNg"></ng-video-preview>
+        <hr>
+        <ng-video-preview source="vimeo" url="http://vimeo.com/101266603"></ng-video-preview>
+        <hr>
+        <ng-video-preview source="vine" url="https://vine.co/v/bnB77Z9QMZh"></ng-video-preview>
+        <hr>
+        <ng-video-preview source="bitlanders" url="http://www.bitlanders.com/movie/music-concert/54514"></ng-video-preview>
+      </div>
+    </div>
+      
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-sanitize.min.js"></script>
+    <script src="video-preview.js"></script>
+    <script>
+      angular.module('videoPreviewDemo', ['ngVideoPreview'])
+        .controller('videoPreviewDemoController', ['$scope', function($scope) {
+          'use strict';
+        }]);
+    </script>
+  </body>
+</html>
