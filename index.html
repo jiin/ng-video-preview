@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Ng-video-preview by jiin</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/jiin/ng-video-preview">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Ng-video-preview</h1>
+            <h2>angular directive to get video previews (youtube, vimeo, ecc.)</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/jiin/ng-video-preview/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/jiin/ng-video-preview/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a name="ng-video-preview" class="anchor" href="#ng-video-preview"><span class="octicon octicon-link"></span></a>ng-video-preview</h1>
+
+<p>ngVideoPreview is an angular.js directive that generate the emdeddable iframe of a video url.
+Actually are supported:</p>
+
+<ul>
+<li>Youtube</li>
+<li>Vimeo</li>
+<li>Vine </li>
+<li>Bitlanders </li>
+</ul><h2>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<pre><code>bower install ng-video-preview
+</code></pre>
+
+<p>Include the video-preview.js script provided in bower_components and add <code>ngVideoPreview</code> in your app's dependencies. </p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Youtube:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;ng-video-preview</span> <span class="na">source=</span><span class="s">"youtube"</span> <span class="na">url=</span><span class="s">"http://youtu.be/VEUfscdqpNg"</span><span class="nt">&gt;&lt;/ng-video-preview&gt;</span>
+</pre></div>
+
+<p>Vimeo:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;ng-video-preview</span> <span class="na">source=</span><span class="s">"vimeo"</span> <span class="na">url=</span><span class="s">"http://vimeo.com/101266603"</span><span class="nt">&gt;&lt;/ng-video-preview&gt;</span>
+</pre></div>
+
+<p>Vine:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;ng-video-preview</span> <span class="na">source=</span><span class="s">"vine"</span> <span class="na">url=</span><span class="s">"https://vine.co/v/bnB77Z9QMZh"</span><span class="nt">&gt;&lt;/ng-video-preview&gt;</span>
+</pre></div>
+
+<p>Bitlanders:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;ng-video-preview</span> <span class="na">source=</span><span class="s">"bitlanders"</span> <span class="na">url=</span><span class="s">"http://www.bitlanders.com/movie/music-concert/54514"</span><span class="nt">&gt;&lt;/ng-video-preview&gt;</span>
+</pre></div>
+
+<p>You can also manually specify player's width and height in pixels, for example:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;ng-video-preview</span> <span class="na">source=</span><span class="s">"youtube"</span> <span class="na">player-width=</span><span class="s">"600"</span> <span class="na">player-height=</span><span class="s">"800"</span> <span class="na">url=</span><span class="s">"http://youtu.be/VEUfscdqpNg"</span><span class="nt">&gt;&lt;/ng-video-preview&gt;</span>
+</pre></div>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/jiin">jiin</a> can be found on <a href="https://github.com/jiin/ng-video-preview">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
