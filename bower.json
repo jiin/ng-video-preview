@@ -1,6 +1,6 @@
 {
   "name": "ng-video-preview",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "video-preview",
   "ignore": [
     "**/.*",

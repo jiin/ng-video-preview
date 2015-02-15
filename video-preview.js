@@ -27,8 +27,7 @@ angular.module('ngVideoPreview', ['ngSanitize']).
             var config = {
                 'youtube': {
                     search: [
-                        /youtu\.be\/(.+)/,
-                        /youtube\.com\/watch\?v=(.+)/
+                        /(?:https?:\/\/|www.|m.|^)youtu(?:be.com\/watch\?(?:.?&(?:amp;)?)?v=|.be\/)([\w‌​-]+)(?:&(?:amp;)?[\w\?=])?/
                     ],
                     embed: '//www.youtube.com/embed/@',
                     index: 1
